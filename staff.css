@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Staff Card Container */
+.staff-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual Staff Cards */
+.staff-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+}
+
+/* Staff Card Image */
+.staff-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Staff Info */
+.staff-info {
+    padding: 15px;
+}
+
+.staff-info h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.staff-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.staff-info strong {
+    color: #2980b9;
+}
+
+/* Centered Staff Card */
+.centered-card {
+    width: 50%; /* Make the centered card wider */
+    margin-left: 25%; /* This will center the card horizontally */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .staff-card {
+        width: 100%;
+    }
+    
+    /* Centered Card for Smaller Screens */
+    .centered-card {
+        width: 100%; /* On small screens, make it take full width */
+        margin-left: 0; /* Remove left margin on small screens */
+    }
+}

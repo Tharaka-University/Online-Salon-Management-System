@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hair styles gallery</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	<h3 id="skia">What We Do</h3>
+
+	<div class="image-gallery">
+	<div class="image">
+		<img src="bantu nots.jpeg" alt="Bantu nots" height="400px" width="300px;">
+		<p class="caption">Bantu knots</p>
+	</div>
+	
+	<div class="image">
+		<img src="boho braids.jpeg" alt="Boho braids" height="400px" width="300px;">
+		<p class="caption">Boho braids</p>
+   </div>
+
+<div class="image">
+	<img src="butterfly locs.jpeg" alt="Butterfly locs" height="400px" width="300px">
+	<p class="caption">Butterfly locs</p>
+</div>
+
+<div class="image">
+	<img src="conrow braids.jpeg" alt="Conrow braids" height="400px" width="300px">
+	<p class="caption">Conrow braids</p>
+</div>
+<div class="image">
+	<img src="conrows.jpeg" alt="Conrows" height="400px" width="300px">
+	<p class="caption">Conrows</p>
+</div>
+<div class="image">
+	<img src="faith.jpg" alt="Faith locs" height="400px" width="300px">
+	<p class="caption">Faith locs</p>
+</div>
+<div class="image">
+	<img src="faux.jpeg" alt="Faux locs" height="400px" width="300px">
+	<p class="caption"> Faux locs</p>
+</div>
+<div class="image">
+	<img src="fulani braids.jpeg" alt="Fulani braids" height="400px" width="300px">
+	<p class="caption"> Fulani braids</p>
+</div>
+<div class="image">
+	<img src="invinsible locs.jpeg" alt="Invinsible locs" height="400px" width="300px">
+	<p class="caption">Invinsible locs</p>
+</div>
+<div class="image">
+	<img src="knotless braids.jpeg" alt="Knotless braids" height="400px" width="300px">
+	<p class="caption">Knotless braids</p>
+</div>
+<div class="image">
+	<img src="locs.jpeg" alt="Locs" height="300px" width="300px">
+	<p class="caption">Locs</p>
+</div>
+<div class="image">
+	<img src="makeba.jpeg" alt="Makeba" height="300px" width="300px">
+	<p class="caption">Makeba</p>
+</div>
+<div class="image">
+	<img src="passion twists.jpeg" alt="Passion twists" height="300px" width="300px">
+	<p class="caption">Passion twists</p>
+</div>
+<div class="image">
+	<img src="passion.jpg" alt="MPassion" height="300px" width="300px">
+	<p class="caption">Passion</p>
+</div>
+<div class="image">
+	<img src="sister locs.jpeg" alt="Sister locs" height="300px" width="300px">
+	<p class="caption">Sister locs</p>
+</div>
+<div class="image">
+	<img src="spiral braids.jpeg" alt="Spiral braids" height="300px" width="300px">
+	<p class="caption">Spiral braids</p>
+</div>
+<div class="image">
+	<img src="twist.jpg" alt="Twists" height="300px" width="300px">
+	<p class="caption">Twists</p>
+</div>
+<div class="image">
+	<img src="wig installation.jpeg" alt="Wig installation" height="300px" width="300px">
+	<p class="caption">Wig installation</p>
+</div>
+
+<script>
+        function openModal(image) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+            const captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = image.src;
+            captionText.innerHTML = image.nextElementSibling.innerHTML;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+	</body>
+	</html>

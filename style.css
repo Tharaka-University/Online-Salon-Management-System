@@ -1,0 +1,152 @@
+body{
+	background-color: pink;
+	
+}
+ h1{
+ 	color: #474747;
+ 	font-size: 130px;
+
+ }
+ .login{
+ 	color: #474747;
+ 	font-size: 20px;
+ 	border-top: 5pxs;
+ 	
+
+ }
+.image img{
+ 	border-radius: 5px;
+ 	margin-right: 45px;
+ 	margin-top: 7px;
+ 	align-content: right;
+ }
+
+ .container{
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .hero{
+ 	background-color: #BE3CAA;
+ }
+
+ a{
+ 	color: black;
+ 	font-size: 20px;
+ 
+ }
+
+header{
+
+	font-size: 40px;
+}
+body{
+ 	background-color: pink;
+ 	}
+#kichwa{
+	font-size: 180px;
+	margin-left: 50px;
+	color: black;
+}
+
+ .fom{
+ 	color: BLACK;
+ 	margin-bottom: 30px;
+ }
+
+
+ input, button, option{
+ 	color: #2F3D40;
+ 		background-color:#FACFCE;;
+        font-size: 15px;
+
+ }
+
+ form{
+ 	align-content: center;
+ }
+
+ fieldset{
+ 	border-radius: 15px;
+ 	width:400px;
+ 	align-content: center;
+ 	
+	 		height: 500px;
+ 
+ }
+
+	 .about{
+	 	
+	 		background-color:FACFCE;
+	 		width:450px;
+	 		height: 520px;
+	 		border-radius: 15px;
+	 		margin-left: 700px;
+	 		margin-top: -550px;
+
+	 }
+
+ body{
+ 	background-color: pink;
+ 	}
+ 
+ #skia{
+	 	font-size:70px;
+	    margin-top: 10px;
+	    justify-content: center;
+	    align-content: center;
+	    color: #262626;
+	 }
+	  .image-gallery{
+	 	display: flex;
+	 	flex-direction: row;
+	 	align-items: center;
+	 	justify-content: center;
+	 	gap: 35px;
+        margin-top: 5px;
+        flex-wrap: wrap;
+        
+	 }
+	.image{
+		text-align: center;
+		width: 300px;
+	}
+
+	 
+	 .caption{
+	 	font-size: 16px;
+	 	color:#262626;
+	 	margin-top: 8px;
+	 }
+	  
+    .image-gallery {
+        justify-content: flex-start;
+
+    }
+ .modal {
+            display: none; 
+            position: fixed;
+            padding-top: 60px;
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+            background-color:#934788 ;
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80px;
+            max-width: 700px;
+        }
+        .caption {
+            text-align: center;
+            color: black;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #FFFFFF;
+            font-size: 40px;
+            cursor: pointer;
+        }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Beauty</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+    
+        body {
+            background: linear-gradient(to bottom right, #ff9a8b, #ff6a88, #ff99ac);
+            color: #black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #grey;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+            line-height: 1.6;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+        }
+
+        .button {
+            text-decoration: none;
+            padding: 0.8em 1.5em;
+            border-radius: 5px;
+            color: #mintcream;
+            background-color: #skyblue;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #whitesmoke;
+        }
+
+        .footer {
+            margin-top: 1.5em;
+            font-size: 0.9em;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Mega Beauty Salon</h1>
+        <p>Effortlessly manage appointments, services, and customer records all in one place. Enhance your salon's workflow with our easy-to-use tools.</p>
+
+        <div class="button-group">
+            <a href="login.html" class="button">Log In</a>
+            <a href="signup.html" class="button">Sign Up</a>
+        </div>
+
+        <div class="footer">
+            <p>Need help? Contact our support team at <a href="mailto:support@salon.com" style="color: #ff99ac; text-decoration: underline;">support@salon.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

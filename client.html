@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Bookings</title>
+    <link rel="stylesheet" href="client.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Customer Bookings</h1>
+        <table id="bookings-table">
+            <tr>
+                <th>ID</th>
+                <th>Hair Design</th>
+                <th>Adults</th>
+                <th>Children</th>
+                <th>Appointment Date</th>
+                <th>Appointment Time</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // Fetch data from the PHP file
+        fetch('client.php')
+            .then(response => response.json())
+            .then(data => {
+                const table = document.getElementById('bookings-table');
+                
+                if (data.error) {
+                    const errorRow = table.insertRow();
+                    const cell = errorRow.insertCell(0);
+                    cell.colSpan = 6;
+                    cell.textContent = 'Error: ' + data.error;
+                    cell.style.color = 'red';
+                } else if (data.length > 0) {
+                    data.forEach(booking => {
+                        const row = table.insertRow();
+                        row.insertCell(0).textContent = booking.id;
+                        row.insertCell(1).textContent = booking.hair_design;
+                        row.insertCell(2).textContent = booking.adults;
+                        row.insertCell(3).textContent = booking.children;
+                        row.insertCell(4).textContent = booking.appointment_date;
+                        row.insertCell(5).textContent = booking.appointment_time;
+                    });
+                } else {
+                    const row = table.insertRow();
+                    const cell = row.insertCell(0);
+                    cell.colSpan = 6;
+                    cell.textContent = 'No bookings found.';
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+
+</body>
+</html>

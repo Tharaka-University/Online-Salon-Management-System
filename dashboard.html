@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FACFCE;
+        }
+
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            height: 100vh;
+            background-color: pink;
+            color: #0D0D0D;
+            padding-top: 20px;
+            overflow-y: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #0D0D0D;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495E;
+        }
+
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: pink;
+            color: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .dashboard-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980B9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .card .btn:hover {
+            background-color: #3498DB;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero .left {
+            flex: 1;
+        }
+
+        .hero .image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-section {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .hero {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .hero .image {
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+         footer {
+            background-color: #FACFCE;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 260px); /* Adjusts for the sidebar width */
+            margin-left: 60px; /* Aligns to start after sidebar */
+            text-align: right;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            color: #0D0D0D;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2 style="text-align:center; color: black;">Mega Beauty</h2>
+        <a href="#">Dashboard</a>
+        <a href="contact.html">Book appointment</a>
+        <a href="client.html">Clients</a>
+
+        <a href="services.html">Our Services</a>
+        <li><a href="staff.html">Our Staff</a></li> 
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Welcome</h1>
+            <p>Your Mega Salon Dashboard</p>
+        </div>
+
+        <div class="dashboard-section">
+            <div class="card">
+                <section class="hero">
+                    <div class="left">
+                        <h1>Get Your <br> Desired <br> Hair</h1>
+                        <p>Mega beauty awaits you where we<br> ensure you get quality services and products from us to you</p>
+                    </div>
+                    <div class="image">
+                        <img src="Vero.jpeg" alt="A beautiful hairstyle from mega beauty" height="600px" width="500px">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Mega Beauty. Your desire<br>our service to you</p>
+        </div>
+    </footer>
+
+</body>
+</html>

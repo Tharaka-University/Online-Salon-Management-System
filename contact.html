@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="kichwa">Book <br>your <br>service</header>
+
+    <section class="about">
+        <fieldset>
+        
+            <form action="contact.php" method="post" onsubmit="return validateForm()">
+                <div class="fom">
+                    <label for="hair_design">Hair design</label>
+                    <select id="hair_design" name="hair_design">
+                        <option value="">--select hair design--</option>
+                        <option value="Makeba">Makeba</option>
+                        <option value="Faith locs">Faith locs</option>
+                        <option value="Pasion Twists">Pasion Twists</option>
+                        <option value="Locs">Locs</option>
+                        <option value="Conrows">Conrows</option>
+                        <option value="Spiral braids">Spiral braids</option>
+                        <option value="Boho Braids">Boho Braids</option>
+                        <option value="Fulani Braids">Fulani Braids</option>
+                        <option value="Knotless">Knotless</option>
+                        <option value="Sister Locs">Sister Locs</option>
+                        <option value="Wig Installation">Wig Installation</option>
+                        <option value="Invinsible locs">Invinsible locs</option>
+                        <option value="Knotless braids">Knotless braids</option>
+                        <option value="passion">Passion</option>
+                        <option value="Twists">Twists</option>
+                        <option value="Conrow braids">Conrow braids</option>
+                        <option value="Butterfly locs">Butterfly locs</option>
+                    </select><br>
+                </div>
+
+                <div class="fom">
+                    <label for="adults">Adults</label>
+                    <input type="number" id="adults" name="adults" min="1" max="10" value="1"><br>
+                </div>
+
+                <div class="fom">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" name="children" min="0" max="10" value="0"><br>
+                </div>
+
+                <div class="fom">
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" name="date"><br>
+                </div>
+
+                <div class="fom">
+                    <label for="time">Select Time</label>
+                    <input type="time" id="time" name="time"><br>
+                </div>
+
+                <div class="fom">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </fieldset> 
+    </section>
+
+    <script>
+        function validateForm() {
+            const hairDesign = document.getElementById("hair_design").value;
+            const date = document.getElementById("date").value;
+            const time = document.getElementById("time").value;
+
+            if (hairDesign === "") {
+                alert("Please select a hair design.");
+                return false;
+            }
+            const selectedDate = new Date(date);
+            const today = new Date();
+            if (selectedDate < today) {
+                alert("Please select a future date.");
+                return false;
+            }
+            if (!time) {
+                alert("Please select a time.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
